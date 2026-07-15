@@ -8,11 +8,7 @@ patterns established in tests/test_collection.py.
 import pytest
 from app import create_app, db
 from models import User, Film, WatchlistEntry
-from services.watchlist_service import (
-    add_to_watchlist,
-    get_watchlist,
-    AlreadyInWatchlistError,
-)
+from services.watchlist_service import add_to_watchlist, AlreadyInWatchlistError
 from services.collection_service import FilmNotFoundError
 
 
